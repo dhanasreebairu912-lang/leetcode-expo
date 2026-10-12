@@ -4,7 +4,9 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        l=0;h=x
+        if x < 2:
+            return x
+        l=0;h=x//2
         while(l<=h):
             m=(l+h)//2
             if m*m==x:
